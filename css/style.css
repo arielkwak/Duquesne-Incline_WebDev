@@ -1,442 +1,473 @@
-#nav-wrapper ul li a{
-    color:#22832C;
-    line-height: 200px;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-family: "PT Sans";
-    font-weight: bold;
-    left: 800px;
-  } 
+/*
+    Desktop width : 1024px ~ 1280px
+*/
+@media screen and (min-width: 1024px){
 
-#selected a{
-    color: #092E0C !important;
-    text-decoration: underline;
-    background-color: rgba(0, 0, 0, 0) !important;
-    font-family: "PT Sans";
-    font-weight: bold;
-  } 
+    #nav-wrapper ul li a{
+        color:#22832C;
+        line-height: 200px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: "PT Sans";
+        font-weight: bold;
+    } 
 
-#nav-mobile{
-    padding:0 2em 0 0;
-}
+    #selected a{
+        color: #092E0C !important;
+        text-decoration: underline;
+        background-color: rgba(0, 0, 0, 0) !important;
+        font-family: "PT Sans";
+        font-weight: bold;
+    } 
 
-#nav-wrapper ul a:hover {
-    background-color: rgba(0, 0, 0, 0) !important;
-    font-family: "PT Sans";
-    font-weight: bold;
-}
+    #nav-mobile{
+        padding:0 4em 0 0;
+    }
 
-#nav-wrapper img {
-    margin: 2em;
-}
+    #nav-wrapper ul a:hover {
+        background-color: rgba(0, 0, 0, 0) !important;
+        font-family: "PT Sans";
+        font-weight: bold;
+    }
 
-#title{
-    font-style: normal;
-    background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "PT Sans";
-    font-weight: bold;
-    position: absolute;
-    width: 602px;
-    height: 83px;
-    left: 221px;
-    top: 50px;
-    font-size: 64px;
-    line-height: 83px;
-}
+    #nav-wrapper img {
+        margin: 3.2em 0 0 5.7em ;
+    }
 
-#explanation{
-    position: absolute;
-    width: 605px;
-    height: 14px;
-    left: 221px;
-    top: 135px;
 
+    #title{
+        font-style: normal;
+        background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "PT Sans";
+        font-weight: bold;
+        position: absolute;
+        width: 602px;
+        height: 83px;
+        padding-left: 5px;
+        top: 50px;
+        font-size: 60px;
+        line-height: 83px;
+    }
+
+    #explanation{
+        position: absolute;
+        width: 605px;
+        height: 14px;
+        padding-top: 11em;
+        padding-left:5px;
+
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+        color: #000000;
+    }
+
+    .container{
+        width: 70% !important;
+        float: left;
+        width: 70%;
+        margin: 0;
+        padding: 3em 6em 3em 6em;
+        border-right: 1px dotted #ccc;
+    }
+
+    /* https://cssgradient.io/blog/css-gradient-text/ */
+    .sub-titles{
+        background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+
+    }
+
+
+
+    #sidebar {
+        color: #000000;
+        float: left;
+        padding: 2em 4em 4em 4em;
+        font-size: .875em;	
+        /* border-left: 1px solid gray; */
+    }
+
+    #sidebar h3 {
+        font-size: 1.15em;
+        padding-bottom: 15px;
+        border-bottom: 1px dotted #ccc;
+        font-weight: bold;
+    }
+
+    .sidebar-images{
+        padding-right:10px;
+    }
+
+    iframe {
+        display: block;
+        margin: auto;
+    }
+
+    #hours {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 10px;
+        color: #000000;
+    }
+
+    .open {
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 12px;
+        color: #000000;
+    }
+
+    .page-footer {
+        clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+        margin: 0;
+        padding: 3em;
+        color: #ffff;
+        
+        font-size: .813em;
+        text-align: center;
+        border-top: 1px dotted #cccccc;
+        background-color:#064B0D;
+        line-height: 40px;
+    }
+
+    #copyright{
+        font-variant: small-caps; 
+    }
+
+
+    .highlight{
+        background-color: #064B0D;
+        color: #ffff;
+        text-align: center;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+    .general-fee td {
+        text-align: center;
+        border-right: solid 1px #cccccc; 
+        border-left: solid 1px #cccccc;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+    
+    }
+
+    .general-fee th{
+        text-align: center;
+        border-left: solid 1px #cccccc;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+        width: 250px;
+    }
+
+    /* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    .mySlides img{
+        width:100%;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+    .tourInformation{
+        text-align: center;
+    }
+
+    #tourInfoIntro{
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    /* https://cssgradient.io/blog/css-gradient-text/ */
+    .tabs li{
+        background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 120px;
+        line-height: 31px;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+    }
+
+    .tour{
+        background: #064B0D;
+        padding: 2em 1em 1em 1.5em;
+    }
+
+    .tour a{
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        /* identical to box height */
+
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+
+        color: #F7FFD9;
+
+
+    }
+
+    .tourImages{
+        padding: 0px; margin: 0px
+    }
+
+    .tourImages img{
+        width:100%;
+        height:100%;
+        display: block;
+        vertical-align: bottom;
+    }
+
+    .tour li{
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 12px;
+        line-height: 25px;
+        text-align:left;
+        color: #F7FFD9;
+    }
+
+
+
+    #duquesneTour{
+        width: 100%;
+        padding: 1em 0 1em 0;
+        border-spacing: 0px;
+    }
+
+    #duquesneTour td{
+        width:400px;
+    }
+
+    .contactTable{
+        font-family: Helvetica;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+
+        color: #000000;
+    }
+
+    .contactTable td{
+        text-align:center;
+    }
+
+    form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #064B0D;
+        padding: 10px;
+    }
+
+    legend{
+        font-weight: bold;
+        text-align: center;
+        color: #666666;
+        margin-bottom: 5px;
+    }
+
+    label{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .required{
+        color:#FF0000
+    }
+
+    #requiredField{
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .contactForm{
+        font-size: 14px;
+    }
+
+    .earlyHistory{
+        background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.13em;
+    }
+
+    .introduction{
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .caption{
     font-family: Helvetica;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    color: #000000;
-}
-
-.container{
-    width: 70% !important;
-    float: left;
-	width: 70%;
-	margin: 0;
-	padding: 3em 6em 3em 6em;
-	border-right: 1px dotted #ccc;
-}ƒ
-
-/* https://cssgradient.io/blog/css-gradient-text/ */
-.sub-titles{
-    background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
-    /* identical to box height */
-
-    letter-spacing: 0.13em;
-
-}
-
-
-
-#sidebar {
-    color: #000000;
-	float: left;
-	padding: 2em 4em 4em 4em;
-	font-size: .875em;	
-	/* border-left: 1px solid gray; */
-}
-
-#sidebar h3 {
-	font-size: 1.125em;
-    border-bottom: 1px dotted #ccc;
-}
-
-iframe {
-    display: block;
-    margin: auto;
-}
-
-#hours {
-    font-family: "Helvetica";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 10px;
-    color: #000000;
-}
+    line-height: 15px;
 
-.open {
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 12px;
-    color: #000000;
-}
-
-.page-footer {
-	clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
-	margin: 0;
-	padding: 3em;
-	color: #ffff;
-	
-	font-size: .813em;
-	text-align: center;
-	border-top: 1px dotted #cccccc;
-	background-color:#064B0D;
-    line-height: 40px;
-}
-
-#copyright{
-    font-variant: small-caps; 
-}
+    color: #818080;
+    }
 
 
-.highlight{
-    background-color: #064B0D;
-    color: #ffff;
-    text-align: center;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 28px;
-}
+
+    #accordion{
+        text-align:left;
+        color:#22832C;
+    }
 
 
-.general-fee td {
-    text-align: center;
-    border-right: solid 1px #cccccc; 
-    border-left: solid 1px #cccccc;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 21px;
-    letter-spacing: 0.1em;
-   
-  }
 
-.general-fee th{
-    text-align: center;
-    border-left: solid 1px #cccccc;
-    font-family: Helvetica;
+    .ui-state-default{
+        border: 1px solid #cccccc;
+        font-weight: bold;
+        color: #064B0D;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 4em;
+        background-color:#EDEDED;
+    }
+
+    .ui-state-active{
+        border: 1px solid #22832C;
+        color: #22832C;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        background-color:#F7FFD9;
+    }
+        
+    .ui-state-hover{
+        background-color:#ecf9ba;
+        border: 1px solid #064B0D;
+    }
+
+    .answers{
+        font-family: Helvetica;
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 21px;
-    width: 250px;
-}
+    font-size: 17px;
+    line-height: 23px;
+    background-color:#ffff;
+    }
 
-/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
-* {box-sizing:border-box}
+    #grouptourBold{
+        font-weight:bold;
+    }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
+    #fieldTripBold{
+        font-weight:bold;
+    }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+    #patchProgram{
+        font-weight:bold;
+    }
 
+    .youtube-video{
+        width:760px; 
+        height:500px;
+    }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.tourInformation{
-    text-align: center;
-}
-
-#tourInfoIntro{
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-}
-/* https://cssgradient.io/blog/css-gradient-text/ */
-.tabs li{
-    background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 120px;
-    line-height: 31px;
-    /* identical to box height */
-    letter-spacing: 0.1em;
-}
-
-.tour{
-    background: #064B0D;
-    padding: 2em 1em 1em 1.5em;
-}
-
-.tour a{
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 31px;
-    /* identical to box height */
-
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-
-    color: #F7FFD9;
-
+    .imageCollection{
+        width:240px; 
+        height:350px;
+    }
 
 }
-
-.tour li{
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 12px;
-    line-height: 25px;
-    text-align:left;
-    color: #F7FFD9;
-}
-
-
-
-#duquesneTour{
-    width: 100%;
-    padding: 1em 0 1em 0;
-}
-
-.contactTable{
-    font-family: Helvetica;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-
-    color: #000000;
-}
-
-.contactTable td{
-    text-align:center;
-}
-
-form {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #064B0D;
-    padding: 10px;
-}
-
-legend{
-    font-weight: bold;
-    text-align: center;
-	color: #666666;
-	margin-bottom: 5px;
-}
-
-label{
-    font-weight: bold;
-    text-align: center;
-}
-
-.required{
-    color:#FF0000
-}
-
-#requiredField{
-    font-size: 12px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.contactForm{
-    font-size: 14px;
-}
-
-.earlyHistory{
-    background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
-    /* identical to box height */
-    text-align: center;
-    letter-spacing: 0.13em;
-}
-
-.introduction{
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-}
-
-.caption{
-    font-family: Helvetica;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-
-color: #818080;
-}
-
-
-
-#accordion{
-    text-align:left;
-    color:#22832C;
-}
-
-
-
-.ui-state-default{
-    border: 1px solid #cccccc;
-    font-weight: bold;
-    color: #064B0D;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    padding: 4em;
-    background-color:#EDEDED;
-}
-
-.ui-state-active{
-    border: 1px solid #22832C;
-    color: #22832C;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    background-color:#F7FFD9;
-}
-    
-.ui-state-hover{
-    background-color:#ecf9ba;
-    border: 1px solid #064B0D;
-}
-
-.answers{
-    font-family: Helvetica;
-font-style: normal;
-font-weight: 300;
-font-size: 17px;
-line-height: 23px;
-background-color:#ffff;
-}
-
-#grouptourBold{
-    font-weight:bold;
-}
-
-#fieldTripBold{
-    font-weight:bold;
-}
-
-#patchProgram{
-    font-weight:bold;
-}
-
-.youtube-video{
-    width:760px; 
-    height:500px;
-}
-
-.imageCollection{
-    width:240px; 
-    height:350px;
-}
-
