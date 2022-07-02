@@ -1,153 +1,120 @@
-/*
-    Desktop width : 1024px ~ 1280px
-*/
-@media screen and (min-width: 1024px){
+#nav-wrapper ul li a{ 
+    color:#22832C;
+    line-height: 200px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "PT Sans";
+    font-weight: bold;
+} 
 
-    #nav-wrapper ul li a{
-        color:#22832C;
-        line-height: 200px;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-family: "PT Sans";
-        font-weight: bold;
-    } 
+#selected a{
+    color: #092E0C !important;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-family: "PT Sans";
+    font-weight: bold;
+} 
 
-    #selected a{
-        color: #092E0C !important;
-        text-decoration: underline;
-        background-color: rgba(0, 0, 0, 0) !important;
-        font-family: "PT Sans";
-        font-weight: bold;
-    } 
+#nav-wrapper ul a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-family: "PT Sans";
+    font-weight: bold;
+}
 
-    #nav-mobile{
-        padding:0 4em 0 0;
-    }
+#title{
+    font-style: normal;
+    background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "PT Sans";
+    font-weight: bold;
+    position: absolute;
+    width: 580px;
+    height: 83px;
+    padding-left: 5px;
+    top: 50px;
+    font-size: 60px;
+    line-height: 83px;
+}
 
-    #nav-wrapper ul a:hover {
-        background-color: rgba(0, 0, 0, 0) !important;
-        font-family: "PT Sans";
-        font-weight: bold;
-    }
+#explanation{
+    position: absolute;
+    width: 605px;
+    height: 14px;
+    padding-top: 11em;
+    padding-left:5px;
 
-    #nav-wrapper img {
-        margin: 3.2em 0 0 5.7em ;
-    }
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #000000;
+}
 
+/* https://cssgradient.io/blog/css-gradient-text/ */
+.sub-titles{
+    background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height */
 
-    #title{
-        font-style: normal;
-        background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: "PT Sans";
-        font-weight: bold;
-        position: absolute;
-        width: 602px;
-        height: 83px;
-        padding-left: 5px;
-        top: 50px;
-        font-size: 60px;
-        line-height: 83px;
-    }
+    letter-spacing: 0.05em;
 
-    #explanation{
-        position: absolute;
-        width: 605px;
-        height: 14px;
-        padding-top: 11em;
-        padding-left:5px;
+}
 
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 14px;
-        /* identical to box height */
-        color: #000000;
-    }
+#sidebar h3 {
+    font-size: 1.15em;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+    font-weight: bold;
+}
 
-    .container{
-        width: 70% !important;
-        float: left;
-        width: 70%;
-        margin: 0;
-        padding: 3em 6em 3em 6em;
-        border-right: 1px dotted #ccc;
-    }
+.sidebar-images{
+    padding-right:10px;
+}
 
-    /* https://cssgradient.io/blog/css-gradient-text/ */
-    .sub-titles{
-        background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: "PT Sans";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 52px;
-        /* identical to box height */
+iframe {
+    display: block;
+    margin: auto;
+}
 
-        letter-spacing: 0.05em;
+#hours {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 10px;
+    color: #000000;
+}
 
-    }
+.open {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+}
 
+.page-footer {
+    clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
+    margin: 0;
+    padding: 3em;
+    color: #ffff;
+    
+    font-size: .813em;
+    text-align: center;
+    border-top: 1px dotted #cccccc;
+    background-color:#064B0D;
+    line-height: 40px;
+}
 
-
-    #sidebar {
-        color: #000000;
-        float: left;
-        padding: 2em 4em 4em 4em;
-        font-size: .875em;	
-        /* border-left: 1px solid gray; */
-    }
-
-    #sidebar h3 {
-        font-size: 1.15em;
-        padding-bottom: 15px;
-        border-bottom: 1px dotted #ccc;
-        font-weight: bold;
-    }
-
-    .sidebar-images{
-        padding-right:10px;
-    }
-
-    iframe {
-        display: block;
-        margin: auto;
-    }
-
-    #hours {
-        font-family: "Helvetica";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 10px;
-        color: #000000;
-    }
-
-    .open {
-        font-family: Helvetica;
-        font-weight: bold;
-        font-size: 12px;
-        color: #000000;
-    }
-
-    .page-footer {
-        clear: both; /* The clear property specifies which side(s) of an element other floating elements are not allowed. */
-        margin: 0;
-        padding: 3em;
-        color: #ffff;
-        
-        font-size: .813em;
-        text-align: center;
-        border-top: 1px dotted #cccccc;
-        background-color:#064B0D;
-        line-height: 40px;
-    }
-
-    #copyright{
+#copyright{
         font-variant: small-caps; 
     }
 
@@ -309,18 +276,6 @@
         color: #F7FFD9;
     }
 
-
-
-    #duquesneTour{
-        width: 100%;
-        padding: 1em 0 1em 0;
-        border-spacing: 0px;
-    }
-
-    #duquesneTour td{
-        width:400px;
-    }
-
     .contactTable{
         font-family: Helvetica;
         font-style: normal;
@@ -470,4 +425,115 @@
         height:350px;
     }
 
+
+/*
+    Desktop width: 1280px ~ 1600px
+*/
+@media screen and (min-width:1280px){
+    .card{
+        width:90%;
+        margin-left:20px;
+    }
+
+    #nav-mobile{
+        padding:0 1em 0 0;
+    }
+
+    #nav-wrapper img {
+        margin: 3.2em 0 0 3em ;
+    }
+
+    .container{
+        width: 70% !important;
+        float: left;
+        width: 70%;
+        margin: 0;
+        padding: 3em 1em 3em 3em;
+        /* border-right: 1px dotted #ccc; */
+    }
+
+    #sidebar-height-adjust{
+        height:800px;
+    }
+
+    #sidebar {
+        color: #000000;
+        float: left;
+        padding: 2em 0em 4em 1em;
+        /* margin-right:em; */
+        /* margin-left:-4em; */
+        font-size: .875em;	
+        border-left: 1px dotted #ccc;
+    }
+
+    #duquesneTour{
+        width: 80%;
+        padding: 1em 0 1em 0;
+        border-spacing: 0px;
+        margin-left:9em;
+    }
+
+    #duquesneTour td{
+        width:400px;
+    }
+
+    #accordion{
+        width:80%;
+        margin-left:7em;
+    }
+}
+
+/*
+    Desktop width : 1550px ~
+*/
+@media screen and (min-width: 1600px){
+    .card{
+        width:80%;
+        margin-left:8em;
+    }
+
+    #nav-mobile{
+        padding:0 15em 0 0;
+    }
+    #nav-wrapper img {
+        margin: 3.2em 0 0 15em ;
+    }
+
+    .container{
+        width: 70% !important;
+        float: left;
+        width: 70%;
+        margin: 0;
+        padding: 3em 6em 3em 6em;
+        /* border-right: 1px dotted #ccc; */
+    }
+
+    #sidebar-height-adjust{
+        height:800px;
+    }
+
+    #sidebar {
+        color: #000000;
+        float: left;
+        padding: 2em 4em 4em 4em;
+        margin-left:-4em;
+        font-size: .875em;	
+        border-left: 1px dotted #ccc;
+    }
+
+    #duquesneTour{
+        width: 80%;
+        padding: 1em 0 1em 0;
+        border-spacing: 0px;
+        margin-left:7em;
+    }
+
+    #duquesneTour td{
+        width:400px;
+    }
+
+    #accordion{
+        width:80%;
+        margin-left:7em;
+    }
 }
