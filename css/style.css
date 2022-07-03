@@ -16,7 +16,6 @@
 
 nav{
     background-color:white;
-    width:120%;
     
 }
 
@@ -501,7 +500,7 @@ iframe {
     }
 
     #nav-mobile{
-        display:grid;
+        display:grid !important;
         grid-template-columns: auto;
         background:#092E0C;
         margin:0;
