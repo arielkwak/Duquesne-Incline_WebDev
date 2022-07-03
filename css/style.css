@@ -1,27 +1,38 @@
-#nav-wrapper ul li a{ 
-    color:#22832C;
-    line-height: 200px;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-family: "PT Sans";
-    font-weight: bold;
-} 
+.nav-container{
+    width:100%;
+    background-color:white;
 
-#selected a{
-    color: #092E0C !important;
-    text-decoration: underline;
-    background-color: rgba(0, 0, 0, 0) !important;
-    font-family: "PT Sans";
-    font-weight: bold;
-} 
-
-#nav-wrapper ul a:hover {
-    background-color: rgba(0, 0, 0, 0) !important;
-    font-family: "PT Sans";
-    font-weight: bold;
 }
 
-#title{
+.navbar{
+    display:grid;
+    /* grid-template-columns: 0.2fr auto 1fr; */
+    align-items:center;
+    height:200px;
+    width:100%;
+    /* max-width:1720px; */
+    margin: 0 auto;
+}
+
+nav{
+    background-color:white;
+    width:120%;
+    
+}
+
+#nav-wrapper img{
+    padding-top:40px;
+    margin-left:15em;
+    width: 180px;
+}
+
+#nav-wrapper{
+    color:white;
+    background-color:white;
+
+}
+
+#navbar-logo{
     font-style: normal;
     background: -webkit-repeating-linear-gradient(45deg,#092E0C, #7AF586);
     -webkit-background-clip: text;
@@ -31,10 +42,16 @@
     position: absolute;
     width: 580px;
     height: 83px;
-    padding-left: 5px;
+    padding-left: 20px;
+    margin-top:0.1em;
     top: 50px;
     font-size: 60px;
     line-height: 83px;
+    margin-left:6.5em;
+}
+
+#navbar-logo{
+    cursor:pointer;
 }
 
 #explanation{
@@ -51,6 +68,50 @@
     line-height: 14px;
     /* identical to box height */
     color: #000000;
+}
+
+#selected a{
+    color: #092E0C !important;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-family: "PT Sans";
+    font-weight: bold;
+} 
+
+#nav-mobile{
+    display:grid;
+    grid-template-columns: repeat(5, auto);
+    list-style:none;
+    text-align:center;
+    width:30%;
+    /* justify-self:end; */
+    margin-right:10em;
+    margin-top:-13em;
+}
+
+.nav-links{
+    color:#22832C;
+    background-color:white;
+    line-height: 200px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "PT Sans";
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.nav-links:hover{
+    color:#092E0C;
+    transition: all 0.2s ease-out;
+    background-color:white;
+}
+
+.menu-toggle .bar{
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    transition: all 0.3s ease-in-out;
+    background:#22832C;
 }
 
 /* https://cssgradient.io/blog/css-gradient-text/ */
@@ -427,20 +488,131 @@ iframe {
 
 
 /*
+    Desktop width: 761px ~ 1280px
+*/
+
+@media screen and (max-width:1279px){
+    .nav-container{
+        position:relative;
+    }
+
+    #explanation{
+        display:none;
+    }
+
+    #nav-mobile{
+        display:grid;
+        grid-template-columns: auto;
+        background:#092E0C;
+        margin:0;
+        width:100%;
+        position:absolute;
+        top:200px;
+        left:-100%;
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+
+    #nav-moble li a{
+        color:white;
+    }
+
+    #navbar-logo{
+        margin-left:3.5em;
+    }
+
+    #nav-wrapper img{
+        margin-left:3em;
+    }
+
+    #nav-mobile.active{
+        background:white;
+        left:0;
+        opacity: 100%;
+        transition: all 0.5s ease;
+        z-index:1;
+    }
+
+    .container{
+        z-index:222;
+    }
+
+    .nav-links{
+        text-align:center;
+        line-height:60px;
+        width:100%;
+        display:table;
+    }
+
+    .nav-links:hover{
+        background-color: #092E0C;
+        color:white;
+        transition: all 0.4s ease-out;
+    }
+
+    .navbar{
+        width:100%;
+    }
+
+    .nav-links-btn{ 
+        border:none;
+        padding:0;
+        border-radius:0;
+        background-color:white;
+        color:white;
+        transition:all 0.4s ease-out;
+    }
+
+    .nav-links-btn:hover{
+        border:none;
+        padding:0;
+        border-radius:0;
+        background-color:#22832C;
+        color:white;
+        transition:all 0.4s ease-out;
+    }
+
+    #mobile-menu{
+        position:absolute;
+        top:35%;
+        right:5%;
+        transform:translate(5%, 20%);
+    }
+
+    .menu-toggle .bar{
+        display:block;
+        cursor:pointer;
+    }
+
+    .menu-toggle:hover{
+        cursor:pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity:0; 
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg); 
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg); 
+    }
+
+    #sidebar{
+        display:none;
+    }
+}
+
+
+/* 
     Desktop width: 1280px ~ 1600px
 */
 @media screen and (min-width:1280px){
     .card{
         width:90%;
         margin-left:20px;
-    }
-
-    #nav-mobile{
-        padding:0 1em 0 0;
-    }
-
-    #nav-wrapper img {
-        margin: 3.2em 0 0 3em ;
     }
 
     .container{
@@ -481,6 +653,26 @@ iframe {
         width:80%;
         margin-left:7em;
     }
+
+    #nav-wrapper img{
+        padding-top:40px;
+        margin-left:3em;
+    }
+
+    #navbar-logo{
+        margin-left:3.5em;
+    }
+
+    #nav-mobile{
+        display:grid;
+        grid-template-columns: repeat(5, auto);
+        list-style:none;
+        text-align:center;
+        width:40%;
+        /* justify-self:end; */
+        margin-right:3em;
+        margin-top:-13em;
+    }
 }
 
 /*
@@ -492,12 +684,6 @@ iframe {
         margin-left:8em;
     }
 
-    #nav-mobile{
-        padding:0 15em 0 0;
-    }
-    #nav-wrapper img {
-        margin: 3.2em 0 0 15em ;
-    }
 
     .container{
         width: 70% !important;
@@ -536,4 +722,14 @@ iframe {
         width:80%;
         margin-left:7em;
     }
+
+    #nav-wrapper img{
+        padding-top:40px;
+        margin-left:15em;
+    }
+
+    #navbar-logo{
+        margin-left:6.5em;
+    }
+
 }
