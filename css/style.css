@@ -39,7 +39,7 @@ nav{
     font-family: "PT Sans";
     font-weight: bold;
     position: absolute;
-    width: 580px;
+    /* width: 580px; */
     height: 83px;
     padding-left: 20px;
     margin-top:0.1em;
@@ -77,16 +77,6 @@ nav{
     font-weight: bold;
 } 
 
-#nav-mobile{
-    display:grid;
-    grid-template-columns: repeat(5, auto);
-    list-style:none;
-    text-align:center;
-    width:30%;
-    /* justify-self:end; */
-    margin-right:10em;
-    margin-top:-13em;
-}
 
 .nav-links{
     color:#22832C;
@@ -143,7 +133,9 @@ nav{
 iframe {
     display: block;
     margin: auto;
+    width:100%;
 }
+
 
 #hours {
     font-family: "Helvetica";
@@ -476,27 +468,69 @@ iframe {
     }
 
     .youtube-video{
-        width:760px; 
+        width:100%; 
         height:500px;
     }
 
     .imageCollection{
-        width:240px; 
+        width:100%; 
         height:350px;
     }
 
 
+@media screen and (max-width:600px){
+    #navbar-logo{
+        font-size:45px;
+    }
+
+    .highlight{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .imageCollection{
+        height:200px;
+    }
+    #nav-wrapper img{
+        display:none;
+    }
+
+    #navbar-logo{
+        margin-left:0.8em !important;
+    }
+
+    #explanation{
+        display:none;
+    }
+
+    .sub-titles{
+        font-size: 30px;
+        line-height:40px;
+    }
+
+    .earlyHistory{
+        font-size:35px;
+        line-height:40px;
+    }
+
+    .clickTabs{
+        display:none;
+    }
+
+    .youtube-video{
+        margin-top:-5em;
+        margin-bottom:-5em;
+    }
+}
+
 /*
-    Desktop width: 761px ~ 1280px
+    Desktop width: 751px ~ 1280px
 */
 
 @media screen and (max-width:1279px){
     .nav-container{
         position:relative;
-    }
-
-    #explanation{
-        display:none;
     }
 
     #nav-mobile{
@@ -534,6 +568,8 @@ iframe {
 
     .container{
         z-index:222;
+        /* margin-left:2em;
+        width:60%; */
     }
 
     .nav-links{
@@ -602,8 +638,15 @@ iframe {
     #sidebar{
         display:none;
     }
-}
 
+    .blank-space{
+        height:50px;
+    }
+
+    #duquesneTour td{
+        width:300px;
+    }
+}
 
 /* 
     Desktop width: 1280px ~ 1600px
@@ -731,4 +774,14 @@ iframe {
         margin-left:6.5em;
     }
 
+    #nav-mobile{
+        display:grid;
+        grid-template-columns: repeat(5, auto);
+        list-style:none;
+        text-align:center;
+        width:30%;
+        /* justify-self:end; */
+        margin-right:10em;
+        margin-top:-13em;
+    }
 }
