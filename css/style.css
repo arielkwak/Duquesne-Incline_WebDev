@@ -532,10 +532,12 @@ iframe {
     }
 
     .tourImages img{
-        width:300px;
-        height:200px;
+        width:250px;
+        height:180px;
         display: block;
         vertical-align: bottom;
+        margin-right:auto !important;
+        margin-left:auto;
     }
 }
 
