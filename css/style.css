@@ -489,8 +489,8 @@ iframe {
     }
 
     .tourImages img{
-        width:220px;
-        height:150px;
+        width:200px !important;
+        height:150px !important;
         display: block;
         vertical-align: bottom;
     }
@@ -529,6 +529,13 @@ iframe {
     .youtube-video{
         margin-top:-5em;
         margin-bottom:-5em;
+    }
+
+    .tourImages img{
+        width:300px;
+        height:200px;
+        display: block;
+        vertical-align: bottom;
     }
 }
 
