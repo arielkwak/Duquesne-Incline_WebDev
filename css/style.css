@@ -41,12 +41,13 @@ nav{
     position: absolute;
     /* width: 580px; */
     height: 83px;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-top:0.1em;
     top: 50px;
     font-size: 60px;
     line-height: 83px;
-    margin-left:6.5em;
+    z-index:0;
+    /* margin-left:6.5em; */
 }
 
 #navbar-logo{
@@ -486,9 +487,16 @@ iframe {
     .highlight{
         font-size: 16px;
     }
+
+    .tourImages img{
+        width:220px;
+        height:150px;
+        display: block;
+        vertical-align: bottom;
+    }
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:840px){
     .imageCollection{
         height:200px;
     }
@@ -550,9 +558,9 @@ iframe {
         color:white;
     }
 
-    #navbar-logo{
+    /* #navbar-logo{
         margin-left:3.5em;
-    }
+    } */
 
     #nav-wrapper img{
         margin-left:3em;
@@ -701,9 +709,9 @@ iframe {
         margin-left:3em;
     }
 
-    #navbar-logo{
+    /* #navbar-logo{
         margin-left:3.5em;
-    }
+    } */
 
     #nav-mobile{
         display:grid;
@@ -770,9 +778,9 @@ iframe {
         margin-left:15em;
     }
 
-    #navbar-logo{
+    /* #navbar-logo{
         margin-left:6.5em;
-    }
+    } */
 
     #nav-mobile{
         display:grid;
