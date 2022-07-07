@@ -484,8 +484,8 @@ iframe {
     }
 
     .tourImages img{
-        width:180px !important;
-        height:140px !important;
+        width:170px !important;
+        height:130px !important;
         display: block;
         vertical-align: bottom;
     }
@@ -493,7 +493,7 @@ iframe {
 
 @media screen and (max-width:600px){
     #navbar-logo{
-        font-size:45px;
+        font-size:40px !important;
     }
 
     .highlight{
@@ -511,6 +511,7 @@ iframe {
 @media screen and (max-width:840px){
     .imageCollection{
         height:200px;
+        width:100px;
     }
     #nav-wrapper img{
         display:none;
