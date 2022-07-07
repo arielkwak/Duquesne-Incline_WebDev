@@ -479,19 +479,21 @@ iframe {
     }
 
 @media screen and (max-width:499px){
-    #navbar-logo{
-        font-size:30px !important;
-    }
 
     .tourImages img{
-        width:170px !important;
-        height:130px !important;
+        width:160px !important;
+        height:120px !important;
         display: block;
         vertical-align: bottom;
     }
+
+    .imageCollection{
+        height:170px !important;
+        width:80px !important;
+    }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:659px){
     #navbar-logo{
         font-size:40px;
     }
@@ -506,13 +508,29 @@ iframe {
         display: block;
         vertical-align: bottom;
     }
+
+    .youtube-video{
+        margin-top:-5em !important;
+        margin-bottom:-5em !important;
+    }
+
+    .imageCollection{
+        height:200px !important;
+        width:100px !important;
+    }
 }
 
 @media screen and (max-width:840px){
     .imageCollection{
-        height:200px;
-        width:100px;
+        height:280px ;
+        width:140px;
     }
+
+    #aboutUsImage tr td{
+        margin-right:0;
+        margin-left:0;
+    }
+
     #nav-wrapper img{
         display:none;
     }
@@ -540,8 +558,8 @@ iframe {
     }
 
     .youtube-video{
-        margin-top:-5em;
-        margin-bottom:-5em;
+        margin-top:-2em;
+        margin-bottom:-2em;
     }
 
     .tourImages img{
