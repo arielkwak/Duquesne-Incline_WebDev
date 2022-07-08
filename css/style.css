@@ -225,6 +225,7 @@ iframe {
 
     .mySlides img{
         width:100%;
+        height:500px;
     }
 
     /* The dots/bullets/indicators */
@@ -491,6 +492,7 @@ iframe {
         height:170px !important;
         width:80px !important;
     }
+
 }
 
 @media screen and (max-width:659px){
@@ -518,12 +520,18 @@ iframe {
         height:200px !important;
         width:100px !important;
     }
+
+    .mySlides img{
+        width:100%;
+        height:330px;
+    }
+
 }
 
 @media screen and (max-width:840px){
     .imageCollection{
         height:280px ;
-        width:140px;
+        width:160px;
     }
 
     #aboutUsImage tr td{
@@ -691,7 +699,7 @@ iframe {
         height:50px;
     }
 
-    #duquesneTour td{
+    .duquesneTour td{
         width:300px;
     }
 }
@@ -728,14 +736,14 @@ iframe {
         border-left: 1px dotted #ccc;
     }
 
-    #duquesneTour{
+    .duquesneTour{
         width: 80%;
         padding: 1em 0 1em 0;
         border-spacing: 0px;
         margin-left:9em;
     }
 
-    #duquesneTour td{
+    .duquesneTour td{
         width:400px;
     }
 
@@ -797,14 +805,14 @@ iframe {
         border-left: 1px dotted #ccc;
     }
 
-    #duquesneTour{
+    .duquesneTour{
         width: 80%;
         padding: 1em 0 1em 0;
         border-spacing: 0px;
         margin-left:7em;
     }
 
-    #duquesneTour td{
+    .duquesneTour td{
         width:400px;
     }
 
